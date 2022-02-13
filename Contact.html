@@ -4,34 +4,95 @@
     <!--This title appears on the tab of the website-->
     <head>
         <title>Contact Us</title>
+        <link rel="stylesheet" href="./css/style.css">
     </head>
 
-      <!--Beginning of the body with the background color-->
-    <body bgcolor="#669999">
+      <!--Beginning of the body with the background image-->
+    <body background="./Assets/Images/image 2.jpg">
 
 
         <!--The a tag contains links to pages. Header has the background color and the logo.
        The menu bar is pace under the logo-->
+       <header>
+        <table class="HeaderTable" >
+          <tr>
+            <td>
+              <img id="logo" src="C:\Users\ST\Documents\CodetribeWebsite2022\Website\Assets\Images\MyLogo.png">
+            </td>
+            <td  align="right"  >
+              <nav >
+          <a href="Index.html">HOME</a>|<a href="About.html">ABOUT ME</a>|<a href="#">CONTACT US</a>
+          </nav>
+        </td>
+        </tr>
+        </table>
+      </header>
        
-        <header style="background-color: #f2f2f2;" >
-            <img src="C:\Users\ST\Documents\CodetribeWebsite2022\Website\Assets\Images\Logo.jpg">
-            <nav align="top-center">
-            <a href="index.html">HOME</a>
-            <a href="About.html">ABOUT ME</a>
-            <a href="#">CONTACT US</a>
-            </nav>
-        </header>
-      <main>
+        
+   <main >
+ 
+     <!--table for better alignment-->
+    <table  style=" text-align: center" id="contactTable">
+
+      <tr>
+        <td>
+          <p  >For any enquries please email us and leave a message, call
+            <br>or find us on social media platforms.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h3><b>Email Us</b></h3>
+        </td>
+      </tr>
+      <tr> 
+        <td>
+          <!--inputs, textarea submit button-->
+          <input placeholder="Email" type="email"><br>
+          <input placeholder="Password" type="password"><br>
+          <input placeholder="Phone" type="Phone"><br>
+          <textarea placeholder="Message" cols="30" rows="5"></textarea><br>
+          <input placeholder="Submit" type="Submit">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p>Thank you for your input. We will keep in touch with you.</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <!--address-->
+          <p>
+            <b>We are based in:</b><br>
+              Polokwane<br>
+              2 Hector Peterson Ave<br>
+              Seshego-E<br>
+              0742 <br>
+            </p>
+        </td>
+      </tr>
+      <tr>
+        <!--iframe -->
+        <td>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.2414071071917!2d29.351644814983143!3d-23.845559984542508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec72134a3f41df9%3A0xe4689522651d3a82!2sSeshego%20zone5%20Alf%20Makaleng%20Primary%20School!5e0!3m2!1sen!2sza!4v1644529126519!5m2!1sen!2sza" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </td>
+      </tr>
+    </table>
+  
+ 
 
 
-    <!--Sentence-->
-    <p align="center">For any enquries please email us and leave a message, call <br>or find us on social media platforms.</p>
 
-    <!--Bold heading-->
-    <h3 align="center"><b>Email Us</b></h3>
+<!-- 
+  <div class="center">
+    <div class="usertext">
 
-    <!--Input text for users information and the submit button-->
-    <div align="center">
+      <p>For any enquries please email us and leave a message, call
+        <br>or find us on social media platforms.</p>
+
+      <h3><b>Email Us</b></h3>
+
     <input placeholder="Email" type="email"><br>
     <input placeholder="Password" type="password"><br>
     <input placeholder="Phone" type="Phone"><br>
@@ -40,57 +101,44 @@
 
     <p>Thank you for your input. We will keep in touch with you.</p>
 
+     <p>
+      <b>We are based in:</b><br>
+        Polokwane<br>
+        2 Hector Peterson Ave<br>
+        Seshego-E<br>
+        0742 <br>
+      </p>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.2414071071917!2d29.351644814983143!3d-23.845559984542508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec72134a3f41df9%3A0xe4689522651d3a82!2sSeshego%20zone5%20Alf%20Makaleng%20Primary%20School!5e0!3m2!1sen!2sza!4v1644529126519!5m2!1sen!2sza" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
     </div>
-
-   
-
-    <!--Address in a P tag and also added the breaks-->
-    <p align="center">
-  <b>We are based in:</b><br>
-    Boksburg<br>
-    Commissioner street<br>
-    1459 <br>
-  </p>
-
-  <!-- The div is to align the map to the center. Used iframe to embed the map of the place-->
-    <div align="center">
-
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.180132155125!2d28
-    .25881831503045!3d-26.223335983429283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e
-    95179bd169dbd5%3A0x5ceb386af64438a2!2s339%20Commissioner%20St%2C%20Boksburg%2C%201459!5e0!3m2!
-    1sen!2sza!4v1644177415985!5m2!1sen!2sza" 
-    width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"  >
-  </iframe>
-  
   </div>
-   
-
-
+  -->
     </main>
       
-        <!--The information on the footer is aligned to the center along with the social   
-            media links and phone numbers. Also breaks to move to the next line using the same information-->
-
-       <!--using the divs to put the background color only on the footer abd the texts to be in white-->
-      <footer align="center"> 
-       <div style="background-color:black;color:white;">
-       <p> Find me on the following platforms:<br>
-       <a href="https://www.linkedin.com/in/saraphina-ranoto-1b9443188/" target="_blank">Linkedin</a> <br>
-       <a href="https://twitter.com/SaraphinaLes" target="_blank">Twitter</a> <br>
-       <a href="https://www.facebook.com/saraphina.ranoto" target="_blank">Facebook</a>
-       </p>
-     
-
-       <p>For more information call on the number below:<br>
-         <a href="Make a call 0614135268">0614135268</a></p>
-       </div>
-
-     
-
-
-
-   </footer>
-
+       <!--Footer-->
+       <footer>
+        <table id="FooterTable" class="center" >
+        
+          <tr >
+        
+            <td >
+             
+                <p align="center"> Find me on Linkedin or Email us:<br>
+                  <a href="https://www.linkedin.com/in/saraphina-ranoto-1b9443188/" target="_blank">Linkedin</a> <br>
+                  saraphinashanell@gmail.com
+                  
+                 </p>
+                
+                  <p align="center">For more information call on the number below:<br>
+                    <a href="Make a call 0614135268">0614135268</a></p>
+                 
+               </td>
+        
+          </tr>
+        </table>
+            
+            </footer>
 
 
 

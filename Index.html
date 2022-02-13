@@ -1,115 +1,122 @@
 <!DOCTYPE html>
 <html>
 
-   <!--This is the header. It appears on the tap--> 
+   <!--Title appears on the tab.-->
 <head>
   <title>Saraphina Ranoto</title>
-
-  <!--information about this website-->
+  <!--meta for accomodating all characters and symbols...-->
   <meta charset="UTF-8">
+  <!--this meta for searching your website-->
   <meta name="description" content="HTML">
   <meta name="Keywords" content="codetribe,mlab,bootcamp">
   <meta name="Author" content="Saraphina Ranoto">
-  
+  <!--Linked the pages to css file-->
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
-   <!---A background color to appear on the full body of the website-->
-  <body style="background-color: 	#669999;" >
+   <!--body has a background image-->
+  <body background="./Assets/Images/image 2.jpg">
   
+  <!--the header contain the table, logo and the nav for better alignment. -->
+    <header >
+      <table  class="HeaderTable"  >
+        <tr>
+          <td>
+            <img id="logo" src="C:\Users\ST\Documents\CodetribeWebsite2022\Website\Assets\Images\MyLogo.png">
+          </td>
+       <td align="right" >
+        <nav >
+        <a href="#">HOME</a><a href="About.html">ABOUT ME</a><a href="Contact.html">CONTACT US</a>
+        </nav>
+      </td>
+      </tr>
+      </table>
+    </header>
 
    
-
-    <!--This is the hearder that contain links pages in order be able to navigate around them.-->
-
-    
-
-    <header style="background-color: #f2f2f2;" >
-    <img src="C:\Users\ST\Documents\CodetribeWebsite2022\Website\Assets\Images\Logo.jpg">
-        <nav>
-        <a href="#">HOME</a>
-        <a href="About.html">ABOUT ME</a>
-        <a href="Contact.html">CONTACT US</a>
-        </nav>
-    </header>
      
    
-    
 
-      <!--This is a thumbnail and a video, so you see the thumb before you play the videos, 
-       otherwise it displays error message-->
-
-    <center>
-        <video  width="500" poster="C:\Users\ST\Documents\CodetribeWebsite2022\Website\Assets\Images\Thumbnail.jpg" loop controls>
-          <source src="C:\Users\ST\Documents\CodetribeWebsite2022\Website\Assets\Video\Graduation.mp4"/>
-          Unspecified Error Occured
-        </video>
-    </center>
-
-
-         <!--Heading-->
-    <h1>Saraphina Ranoto's Profile</h1>
-
-         <!--A sentence in italic that goes with the heading before introduction-->
-    <P><i>Let me share my journey with you.</i> </P>
-
-         <!--an image that float on the right hand side of the paragraphs-->
-     <img src ="C:\Users\ST\Documents\CodetribeWebsite2022\Website\Assets\Images\Ranoto.jpg"
-      width="200" height="250"   alt="Saraphina's image" style="float: right;">
-
-         <!--The main contains bold heading and paragraphs-->
     <main>
-        <h3><b>I would like to tell you a bit about my self and my educational background.</b> </h3>
-        <p >
-            
-         First and foremost, I'd want to express my gratitude for taking the time to read my profile. 
-         I'd like to provide a brief overview of my experience. Throughout my Information Technology course,
-         I will tell you about my IT journey and share tales from all of the interviews I conducted with various
-         organizations Please bear with me since this narrative is going to be long, and some of the details will
-         be difficult to follow.It's possible that you won't be able to read the entire profile in one sitting hahaha 
-         just kidding .
-        
-        </p>
-
-        <P>
-          Saraphina is a 27-year-old graduate with a National Diploma in Information Technology and an Advanced Diploma
-          in Information Technology from the Vaal University of Technology. I am extremely thrilled that I have completed
-          a brief goal that I set for myself, and now that I am on another path to complete my skills as a graduate, I am
-          grateful to have been chosen and to join the Mlab team in this codetribe web development bootcamp. I'm excited 
-          to learn new abilities and be able to put them to use in the profession.
-         </P>
-
-         <P>
-          Despite all of the ups and downs in my job search, I am grateful that I never quit up. I've never gotten a good 
-          news email; they've always been rejections. I will also attend to interviews, but they never call me back. I was
-          about to give up when I received a text from Mlab. This bootcamp provided me something to concentrate on. This 
-          journey has caught my attention. Never give up, something will always come up, is my motto.
-          </P>
+      <!--Main table for structure, it contains video, paragraphs and image-->
+      <table class="MainTable"   align="center">  
+        <tr>
+          <!--used colspan to span the cell for video width to be 100%-->
+          <td colspan="2">
+            <video width="500" poster="C:\Users\ST\Documents\CodetribeWebsite2022\Website\Assets\Images\Thumbnail.jpg" loop controls>
+              <source src="C:\Users\ST\Documents\CodetribeWebsite2022\Website\Assets\Video\Graduation.mp4"></video>
+        </td>
+        </tr>
+        <tr>
+          <!-- class bio/usertext is used on the index,about and contact page-->
+          <td  class="Bio"  align="left" > 
+            <div  class="usertext"   style="text-align:left">
           
+           <!--Heading and paragraphs-->
+              <h1>Saraphina Ranoto</h1>
+             <p><i>Let me share my journey with you.</i></p>
 
-          <button>Button</button>
-      </main>
 
-         <!--This the footer, with its own background color, and the text in white,
-           also have social media links together with phone numbers-->
+             <p>
+              First and foremost, I'd like to express my gratitude for taking the time to read my profile. 
+              let me give you a brief overview of my experience from my years in school till today. Throughout
+               my Information Technology course, my IT journey and share a detail about my employment history. 
+               Please bear with me this is going to be long, and some of the details will be difficult to follow.
+               I hope you like it and please contact us if you would like to make a profile similar to this one.
+            </p>
 
-    <footer align="center">
-     <div  style="background-color:black;color:white;">
-      <p> Find me on the following platforms:<br>
-        <a href="https://www.linkedin.com/in/saraphina-ranoto-1b9443188/" target="_blank">Linkedin</a> <br>
-        <a href="https://twitter.com/SaraphinaLes" target="_blank">Twitter</a> <br>
-        <a href="https://www.facebook.com/saraphina.ranoto" target="_blank">Facebook</a>
-       </p>
+            <P >
+              Saraphina is a 27-year-old graduate with a National Diploma in Information Technology and an Advanced Diploma
+              in Information Technology from the Vaal University of Technology. I am extremely thrilled that I have completed
+              a brief goal that I set for myself which was getting my degree, and who knew that 2022 I  will be on 
+             a journey with codetribe web development bootcamp to gain experience, I am grateful to have been 
+             selected to join Mlab team. I'm excited to learn new skills and be able to put them to use now and in the future.
+             </P>
+
+             <P>
+              I believe that having that one skill that one can learn in order to flourish in the IT field is essential to having a
+              successful journey throughout the profession. I'm not going to stop until I get to where I want to be. For the year
+              2022, I have registered for a Postgraduate Diploma in Information Technology. I'd like to continue my study while
+              still gaining experience at mlab. This bootcamp is assisting me in launching my career as a developer, which I am
+              highly interested in and have invested time and effort into.
+              </P>
+              <!-- button-->
+
+            <input class="Button" type="Button" value="Download Resume">
+          </div>
+           </td>
+
+          <td>
+            <img src ="C:\Users\ST\Documents\CodetribeWebsite2022\Website\Assets\Images\Ranoto.jpg" alt="Saraphina's image" >
+          </td>
+        </tr>
+      </table>
+
       
-
-        <p>For more information call on the number below:<br>
-          <a href="Make a call 0614135268">0614135268</a></p>
-        </div>
-
-    
-    </footer>
-
-        <!--The end of my footer and most probalby the end of my Home page.-->
-    
+    </main>
+      <!-- class center is used on all footers-->
+    <footer>
+      <table id="FooterTable" class="center" >
+      
+        <tr >
+      
+          <td >
+           <!-- a tag contains social media links and contacts-->
+              <p align="center"> Find me on Linkedin or Email us:<br>
+                <a href="https://www.linkedin.com/in/saraphina-ranoto-1b9443188/" target="_blank">Linkedin</a> <br>
+                saraphinashanell@gmail.com
+                
+               </p>
+              
+                <p align="center">For more information call on the number below:<br>
+                  <a href="Make a call 0614135268">0614135268</a></p>
+               
+             </td>
+      
+        </tr>
+      </table>
+          
+          </footer>
 </body>
 
 </html>
