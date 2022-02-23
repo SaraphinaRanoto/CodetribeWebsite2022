@@ -39,7 +39,7 @@
 
     <main>
       <!--Main table for structure, it contains video, paragraphs and image-->
-      <table class="MainTable"   align="center">  
+      <table border="1" class="MainTable"   align="center">  
         <tr>
           <!--used colspan to span the cell for video width to be 100%-->
           <td colspan="2">
@@ -50,40 +50,19 @@
         <tr>
           <!-- class bio/usertext is used on the index,about and contact page-->
           <td  class="Bio"  align="left" > 
-            <div  class="usertext"   style="text-align:left">
+            <div  style="text-align:left">
           
            <!--Heading and paragraphs-->
-              <h1>Saraphina Ranoto</h1>
-             <p><i>Let me share my journey with you.</i></p>
+              <h1 id="heading1"></h1>
+              <p id="home0"></p>
+              <p id="home1"> </p>
+              <P id="home2"></P>
+              <P id="home3"></P>
 
-
-             <p>
-              First and foremost, I'd like to express my gratitude for taking the time to read my profile. 
-              let me give you a brief overview of my experience from my years in school till today. Throughout
-               my Information Technology course, my IT journey and share a detail about my employment history. 
-               Please bear with me this is going to be long, and some of the details will be difficult to follow.
-               I hope you like it and please contact us if you would like to make a profile similar to this one.
-            </p>
-
-            <P >
-              Saraphina is a 27-year-old graduate with a National Diploma in Information Technology and an Advanced Diploma
-              in Information Technology from the Vaal University of Technology. I am extremely thrilled that I have completed
-              a brief goal that I set for myself which was getting my degree, and who knew that 2022 I  will be on 
-             a journey with codetribe web development bootcamp to gain experience, I am grateful to have been 
-             selected to join Mlab team. I'm excited to learn new skills and be able to put them to use now and in the future.
-             </P>
-
-             <P>
-              I believe that having that one skill that one can learn in order to flourish in the IT field is essential to having a
-              successful journey throughout the profession. I'm not going to stop until I get to where I want to be. For the year
-              2022, I have registered for a Postgraduate Diploma in Information Technology. I'd like to continue my study while
-              still gaining experience at mlab. This bootcamp is assisting me in launching my career as a developer, which I am
-              highly interested in and have invested time and effort into.
-              </P>
               <!-- button-->
 
             <input class="Button" type="Button" value="Download Resume">
-          </div>
+           </div>
            </td>
 
           <td>
@@ -92,8 +71,32 @@
         </tr>
       </table>
 
-      
     </main>
+
+      <script>
+        //Displaying  output 
+
+        document.getElementById('heading1').innerHTML="<b>Saraphina Ranoto</b>";
+        document.getElementById('home0').innerHTML="<i>Let me share my journey with you.</i>";
+        document.getElementById('home1').innerHTML=" First and foremost, I'd like to express my gratitude for <br>" + 
+        "taking the time to read my profile let me give you a brief overview of my experience from my years in school till today." +
+        "Throughout my Information Technology course, my IT journey and share a detail about my employment history. " +
+        " Please bear with me this is going to be long, and some of the details will be difficult to follow." +
+        "I hope you like it and please contact us if you would like to make a profile similar to this one.";
+
+        document.getElementById('home2').innerHTML=" Saraphina is a 27-year-old graduate with a National Diploma in Information Technology and an Advanced Diploma in " + 
+        "Information Technology from the Vaal University of Technology." +
+        "I am extremely thrilled that I have completed a brief goal that I set for myself which was getting my degree, and who knew that 2022 I  will be on " +
+        "a journey with codetribe web development bootcamp to gain experience, I am grateful to have been " +
+        "selected to join Mlab team. I'm excited to learn new skills and be able to put them to use now and in the future.";
+
+        document.getElementById('home3').innerHTML="I believe that having that one skill that one can learn in order to flourish in the IT field is essential to having a successful journey throughout the profession." +
+        " I'm not going to stop until I get to where I want to be. For the year 2022, I have registered for a Postgraduate Diploma in Information Technology." +
+        " I'd like to continue my study while still gaining experience at mlab." +
+        " This bootcamp is assisting me in launching my career as a developer, which I am highly interested in and have invested time and effort into.";
+
+      </script>
+
       <!-- class center is used on all footers-->
     <footer>
       <table id="FooterTable" class="center" >
@@ -117,8 +120,9 @@
       </table>
           
           </footer>
-</body>
 
+         
+</body>
 </html>
 
 

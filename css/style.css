@@ -15,7 +15,7 @@ a{
     color: rgb(169, 170, 236);
 }
 video{
-    width: 90%;
+    width: 100%;
     height: auto;
     border: 2px solid #1e1e1e;
 }
@@ -24,24 +24,18 @@ img{
     height: auto;
     margin-top: 10px;
     margin-bottom: 6px;
-    border: 2px solid #1e1e1e;
+    border-radius: 20px solid #1e1e1e;
     
 }
 
 .MainTable{
     
-    width: 80%;
+    width: 70%;
     height: 100vh;
-   margin-top: 16px;
-
-   
+   margin-top: 16px;  
 }
 
-#contactTable{
-    width:100%;
-    color: #fff;
 
-}
 
 .Bio{
      width: 78%;
@@ -50,21 +44,13 @@ img{
      
 }
 
-.usertext{
-    color: white;
-    width: 78%;
-    font-family:  Arial;
-  
-}
-
-
 .Button{
    
     padding: 5px;
-    border-radius: 5px;
-  
-   
+    border-radius: 5px;  
 }
+
+
 #FooterTable{
     background-color: #262626;
     width: 100%;
@@ -81,3 +67,125 @@ img{
 .right{
     width: 25%;
 }
+
+
+.sendform{
+    text-align: center;
+    color: white;
+    width: 100%;
+   
+}
+#theimage{
+    border-radius: 20px;
+}
+
+#Paragraph1{
+    color: white;
+    width: 78%;
+    font-family:   serif
+}
+#Paragraph1{
+    color: white;
+    width: 78%;
+    font-family:   serif
+}
+#Paragraph2{
+    color: white;
+    width: 78%;
+    font-family:   serif
+}
+#Paragraph3{
+    color: white;
+    width: 78%;
+    font-family:   serif
+}
+#Paragraph4{
+    color: white;
+    width: 78%;
+    font-family:   serif
+}
+#Paragraph5{
+    color: white;
+    width: 78%;
+    font-family:   serif
+}
+#Paragraph6{
+    color: white;
+    width: 78%;
+    font-family:   serif
+}
+
+
+#mylist{
+    color: white;
+    width: 78%;
+    font-family:  serif
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+#Pinfo{
+
+    color: white;
+    width: 78%;
+    font-family:  serif
+}
+
+#heading1{
+    color: white;
+    font-family:   serif
+}
+
+
+#home0{
+    color: white;
+    width: 78%;
+    font-family:  serif
+}
+
+#home1{
+    color: white;
+    width: 78%;
+    font-family:  serif
+}
+
+
+#home2{
+    color: white;
+    width: 78%;
+    font-family:   serif
+}
+
+
+#home3{
+    color: white;
+    width: 78%;
+    font-family:  serif
+}
+
+#contact1{
+text-align: center;
+color: white;
+}
+
+#heading2{
+    text-align: center;
+color: white;
+
+
+}
+
+#contact2{
+    text-align: center;
+    color: white;
+ }
+
+#contact3{
+        text-align: center;
+        color: white;
+ }
+
+ 

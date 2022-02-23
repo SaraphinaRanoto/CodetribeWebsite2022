@@ -30,108 +30,80 @@
 
 
         <main>
-          <table class="MainTable"  align="center">
-            <tr>
-              <td colspan="2">
-                <img src ="C:\Users\ST\Documents\CodetribeWebsite2022\Website\Assets\Images\saraphina.jpg" 
-               align="center" alt="Saraphina's image";>
-            </td>
-            </tr>
+      
+      <img id="theimage" src="C:\Users\ST\Documents\CodetribeWebsite2022\Website\Assets\Images\saraphina.jpg">
+      <p id="Pinfo"></p>
+      <p id="Paragraph1"></p>
+      <ul id="mylist"></ul>
+      <p id="Paragraph2"></p>
+      <p id="Paragraph3"></p>
+      <p id="Paragraph4"></p>
+      <p id="Paragraph5"></p>
+      <p id="Paragraph6"></p>
+      <p id="Paragraph7"></p>
+    </main>
 
-            <tr>
-              <td class="Bio" > 
-                <div  class="usertext" style="text-align:left;" >
+    <script>
 
-          <p>
-                <b>Full Names:</b> Lesiba Saraphina <br> 
-                <b>Surname:</b>   Ranoto<br>
-                <b>Born: </b>Polokwane<br>
-                <b>Education:</b>  Vaal University of Technology<br>
-                <b>Qualifications:</b> Advanced Diploma in Information Technology<br>
-                <b>Occupation:</b>Registred Postgraduate Diploma student
-                   
-          </p>  
-          
-          <p>
-           During my studies in Advanced Diploma I have majored in Statistic for Information Systems, Emerging Technologies,
-           Information Technology Management, Advanced Database, User Experince Design and Research Methodology. And for my National Diploma 
-           I have majored in Business Analysis, software Development and Information Systems. I have acquired alot of information 
-           that I would love to apply practically in the real world. My very first project was to develop a system using java programming language
-           to create a program that allows a user to place orders and make a purchase of any gadgets in store, to print reciept and just to make
-           changes on the system. Some of the skills I have acquired during and after the project include:<br>
-           <dl> 
-            <dt><b>Computer Literate</b></dt>
-            <dd> 
-              MS package(Word, PowerPoint and  Excel)
-            </dd>
-             
-            <dt><B>Programming Ability</B></dt>
-            <dd> 
-              Programming skills in: Java (NetBeans), SQL, ADO.Net, PHP, VB.Net, CSS and Oracle
-            </dd>
-          
-            <dt> <b>Certificates</b></dt>
-            <dd>    
-              	Cisco Certificate A+ and N+
-            </dd>
+      //Assign variables 
+     let name= "Full Names: Lesiba Saraphina";
+     let surname="Surname: Ranoto";
+     let  Age='Age: 27';
+     let  school='Scool: Vaal university of Technology';
+     let born='Born: Polokwane';
+     let Qualification='Qualification: Advanced Diploma in Information Technology';
+     let Occupation= 'Occupation: Postgradaute Diploma Student';
+
+     // display output my info
     
-           </dl>
-          </p>
+     document.getElementById("Pinfo").innerHTML=name + "<br>" + surname + "<br>" + Age + "<br>"+  school + "<br>"+ born + "<br>" +Qualification+ "<br>" +Occupation + "<br>";
 
-        
-          <p>
-            This projects helped me on how to be a team player. The second one, we worked on  UX/UI a project that would help students stay on top of thier work and avoid missing deadlines
-            or any other school related events. We deployed questionnaires to ask student how covid-19 was affecting their 
-            studies and what they would like to see in a companion App to traverse it. And thirdly, We developed a system in Oracle
-            that allowed us to input data,delete and update data using SQL. We did data querying, manipulation and I also gained
-            a sharp capacity to organize data for optimal usage in order to produce reports of the output data. 
-           </p>
+
+     document.getElementById('Paragraph1').innerHTML="During my studies in Advanced Diploma I have majored in Statistic for Information Systems, Emerging Technologies," +
+      "Information Technology Management, Advanced Database, User Experince Design and Research Methodology. And for my National Diploma " +
+      "I have majored in Business Analysis, software Development and Information Systems. I have acquired alot of information " +
+      "that I would love to apply practically in the real world. My very first project was to develop a system using java programming language to create a program that allows a user to place orders" +
+      " and make a purchase of any gadgets in store, to print reciept and just to make  changes on the system. Some of the skills I have acquired during and after the project include:<br>";
+
+     //display projects in an array
+
+     let info =["Computer Literate", "MS package(Word, PowerPoint and  Excel)","Desktop Support", "Programming Ability (Java (OOP), SQL, ADO.Net, PHP, VB.Net, HTML, CSS and JavaScript)"];
+     let list=document.getElementById("mylist");
+     
+     info.forEach((item) => {
+       let li = document.createElement("li");
+       li.innerText= item;
+       list.appendChild(li);
+     });
+
+     document.getElementById('Paragraph2').innerHTML="This projects helped me on how to be a team player. The second one, we worked on  UX/UI " +
+     "a project that would help students stay on top of thier work and avoid missing deadlines to be a team player or any other school related events." +
+     " We deployed questionnaires to ask student how covid-19 was affecting their studies and what they would like to see in a companion App to traverse it."+
+     " And thirdly, we developed a system in Oracle that allowed us to input data,delete and update data using SQL. We did data querying, manipulation and I also gained" + 
+     "a sharp capacity to organize data for optimal usage in order to produce reports of the output data. " ;
+
+     document.getElementById('Paragraph3').innerHTML="Monthhs after graduating for my Diploma I got an internship at Department of Education as a Feild" + 
+     " Support Engineer. It was a 9 months contract, basically I was mostly dealing with hardware and " + 
+     " software issues. I have gained experience and learned alot like having good commucation skills, being punctual and energetic and also making sure" +
+     " that the service required must be delivered on time and  if you have difficulty completing a task " +
+     "you had to do some research or escalate the matter to a mentor. My time was short but i have gathers alot of skills.";
+
+     document.getElementById('Paragraph4').innerHTML="I got the internship after a very long time, I applied everyday and I only got few responses but I never gave up."+
+      "I couldnt, despite all of the ups and downs in my job search, I am grateful that I never gave up. It is only few emails with good " +
+     "news; like invitation to interviews and stuff. At some point I thought it was my CV but now I see that nothing is wrong with it." +
+     "I was over the moon when I received a text from Mlab. I was hungry for this kind of an opportunity, to me this my foundation, the start " +
+     "to becoming a developer. Never give up, something will always come up, is my motto.";
+
+     document.getElementById('Paragraph5').innerHTML="It is critical to put oneself out there and experience the journey, as well as to learn skills and be able to use them." +
+     "It's no longer about being a part of a specific organization; it's about the abilities we have, what we have to contribute," +
+     "and that's what will propel our careers forward. As technology advances, it is critical to do research  and learn more about new technical abilities."+
+     " We are the ones who must change the world and to prevent ourselves from being ruled by technology. We are the future, and we must continue to learn. Thank you for taking the time to look over my profile.";
+
+     document.getElementById('Paragraph6').innerHTML="I believe that with the skills that I have acquired I can contribute into changing the world.";
+
 
  
-           <p>
-             Monthhs after graduating for my Diploma I got an internship at Department of Education as a Feild
-             Support Engineer. It was a 9 months contract, basically I was mostly dealing with hardware and 
-             software issues. I have gained experience and learned alot like having good commucation skills, being punctual
-             and energetic and also making sure that the service required must be delivered on time and  if you have difficulty completing a task 
-             you had to do some research or escalate the matter to a mentor. But I later realsised that Support Desktop technician was not for me simply
-             because I felt like there are no challenges. I needed something that would keep me up and learning more and more each day.
-             I worked because I had no other choice, I still apply for support job posts.
-             
-           </p>
-        
-          
-          <p>
-            I got the internship after a very long time, I applied everyday and I only got few responses but I never gave up. I
-            couldnt, despite all of the ups and downs in my job search, I am grateful that I never gave up. It is only few emails with good 
-            news; like invitation to interviews and stuff. At some point I thought it was my CV but now I see that nothing is wrong with it.
-            I was over the moon when I received a text from Mlab. I was hungry for this kind of an opportunity, to me this my foundation, the start 
-            to becoming a developer. Never give up, something will always come up, is my motto.
-          </p>
-
-          <p>
-            It is critical to put oneself out there and experience the journey, as well as to learn skills and be able to use them.
-            It's no longer about being a part of a specific organization; it's about the abilities we have, what we have to contribute,
-            and that's what will propel our careers forward. As technology advances, it is critical to investigate and learn more about
-            new technical abilities. We are the ones who must change the worlds and struggle to prevent ourselves from being ruled by
-            technology. We are the future, and we must continue to learn. Thank you for taking the time to look over my profile.
-          </p>
-          
-                
-        
-           <p>
-             I believe that with the skills that I have acquired I can contribute into changing
-             the world.
-          </p>
-                
-                  
-              </div>
-          
-            </tr>
-          </table>
-        
-   
-  
-    </main>
+    </script>
 
      
     <footer>
@@ -157,7 +129,7 @@
           
           </footer>
    
-      
+     
 
 
     </body>

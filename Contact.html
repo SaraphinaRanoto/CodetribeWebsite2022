@@ -5,6 +5,9 @@
     <head>
         <title>Contact Us</title>
         <link rel="stylesheet" href="./css/style.css">
+      
+        
+
     </head>
 
       <!--Beginning of the body with the background image-->
@@ -31,90 +34,80 @@
         
    <main >
  
-     <!--table for better alignment-->
-    <table  style=" text-align: center" id="contactTable">
-
-      <tr>
-        <td>
-          <p  >For any enquries please email us and leave a message, call
-            <br>or find us on social media platforms.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <h3><b>Email Us</b></h3>
-        </td>
-      </tr>
-      <tr> 
-        <td>
-          <!--inputs, textarea submit button-->
-          <input placeholder="Email" type="email"><br>
-          <input placeholder="Password" type="password"><br>
-          <input placeholder="Phone" type="Phone"><br>
-          <textarea placeholder="Message" cols="30" rows="5"></textarea><br>
-          <input placeholder="Submit" type="Submit">
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <p>Thank you for your input. We will keep in touch with you.</p>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <!--address-->
-          <p>
-            <b>We are based in:</b><br>
-              Polokwane<br>
-              2 Hector Peterson Ave<br>
-              Seshego-E<br>
-              0742 <br>
-            </p>
-        </td>
-      </tr>
-      <tr>
-        <!--iframe -->
-        <td>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.2414071071917!2d29.351644814983143!3d-23.845559984542508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec72134a3f41df9%3A0xe4689522651d3a82!2sSeshego%20zone5%20Alf%20Makaleng%20Primary%20School!5e0!3m2!1sen!2sza!4v1644529126519!5m2!1sen!2sza" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </td>
-      </tr>
-    </table>
-  
+    
  
+        <p id="contact1"></p>
+      
+        <h3 id="heading2"></h3>
+      <table class="sendform" >
+        <tr>
+          <td>
+        <form   
+        action="https://formspree.io/f/mbjwozgq"
+        method="POST">
+        <tr>
+          <td>
+      
+        <label>
+         
+          <input placeholder="Username" type="username" name="username">
+        </label>
+      </td>
+    </tr>
+    <tr>
+      <td>
+       
+        <label>
+         
+          <input  placeholder="Email"  type="email" name="email">
+        </label>
+      </tr>
+        </td>
+    <tr>
+      <td>
+     
+        <label>
+       
+          <textarea placeholder="Message" cols="50" rows="10" name="message"></textarea>
+        </label>
+      </tr>
+    </td>
+    <tr>
+      <td>
+        <!-- your other form fields go here -->
+        <button type="submit">Send</button>
+      </tr>
+    </td>
+</form>
+      </td>
+      </tr>
+      <tr>
 
+        <td>
+          <p id="contact2"></p>
+     
+          <p id="contact3"> </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3564.0607865463467!2d27.86029031504059!3d-26.71050498321508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9459a77f8102e3%3A0x2ac83d31e146fb58!2sVaal%20University%20of%20Technology%20(VUT)!5e0!3m2!1sen!2sza!4v1645568981077!5m2!1sen!2sza" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </td>
+      </tr>
+      </table>
+      
+        
+    
+      
+   
 
+     
 
-<!-- 
-  <div class="center">
-    <div class="usertext">
+    
 
-      <p>For any enquries please email us and leave a message, call
-        <br>or find us on social media platforms.</p>
-
-      <h3><b>Email Us</b></h3>
-
-    <input placeholder="Email" type="email"><br>
-    <input placeholder="Password" type="password"><br>
-    <input placeholder="Phone" type="Phone"><br>
-    <textarea placeholder="Message" cols="30" rows="5"></textarea><br>
-    <input placeholder="Submit" type="Submit">
-
-    <p>Thank you for your input. We will keep in touch with you.</p>
-
-     <p>
-      <b>We are based in:</b><br>
-        Polokwane<br>
-        2 Hector Peterson Ave<br>
-        Seshego-E<br>
-        0742 <br>
-      </p>
-
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.2414071071917!2d29.351644814983143!3d-23.845559984542508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec72134a3f41df9%3A0xe4689522651d3a82!2sSeshego%20zone5%20Alf%20Makaleng%20Primary%20School!5e0!3m2!1sen!2sza!4v1644529126519!5m2!1sen!2sza" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-
-    </div>
-  </div>
-  -->
     </main>
+    <script src="./Javascript/Java.js">  </script>
+
       
        <!--Footer-->
        <footer>
@@ -140,8 +133,9 @@
             
             </footer>
 
+       
 
-
+        
     </body>
 
 </html>
